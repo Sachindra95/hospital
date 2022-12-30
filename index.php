@@ -201,5 +201,3 @@ while ($row=mysqli_fetch_array($ret)) {
 
 
 </html>
-
-// suraj commited this line
