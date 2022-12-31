@@ -16,14 +16,12 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title> Smart Clinic Hospital </title>
-
     <link rel="shortcut icon" href="assets/images/fav.jpg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/slider.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -101,7 +99,7 @@ if (isset($_POST['submit'])) {
 
                             <div class="blog-single-det">
                                 <h6>Patient Login</h6>
-                                <a href="hms/user-login.php" target="_blank">
+                                <a href="src/user-login.php" target="_blank">
                                     <button class="btn btn-success btn-sm">Click Here</button>
                                 </a>
                             </div>
@@ -114,7 +112,7 @@ if (isset($_POST['submit'])) {
 
                             <div class="blog-single-det">
                                 <h6>Doctors login</h6>
-                                <a href="hms/doctor" target="_blank">
+                                <a href="src/doctor" target="_blank">
                                     <button class="btn btn-success btn-sm">Click Here</button>
                                 </a>
                             </div>
@@ -129,7 +127,7 @@ if (isset($_POST['submit'])) {
                             <div class="blog-single-det">
                                 <h6>Admin Login</h6>
 
-                                <a href="hms/admin" target="_blank">
+                                <a href="src/admin" target="_blank">
                                     <button class="btn btn-success btn-sm">Click Here</button>
                                 </a>
                             </div>
@@ -180,8 +178,6 @@ if (isset($_POST['submit'])) {
                 </div>
             </div>
         </div>
-
-
     </footer>
     <div class="copy">
         <div class="container">

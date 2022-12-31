@@ -15,8 +15,6 @@ if (strlen($_SESSION['id'] == 0)) {
 
 	<head>
 		<title>User | Appointment History</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
 		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
@@ -85,7 +83,7 @@ if (strlen($_SESSION['id'] == 0)) {
 													<td><?php echo $row['doctorSpecialization']; ?></td>
 													<td><?php echo $row['consultancyFees']; ?></td>
 													<td><?php echo $row['appointmentDate']; ?> / <?php echo
-																								$row['appointmentTime']; ?>
+																																				$row['appointmentTime']; ?>
 													</td>
 													<td><?php echo $row['postingDate']; ?></td>
 													<td>
