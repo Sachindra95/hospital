@@ -9,5 +9,3 @@ mysqli_query($con,"UPDATE doctorslog  SET logout = '$ldate' WHERE uid = '$did' O
 session_unset();
 //session_destroy();
 $_SESSION['errmsg']="You have successfully logout";
-?>
-
