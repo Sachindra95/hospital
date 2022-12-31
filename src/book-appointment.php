@@ -43,7 +43,6 @@ if (isset($_POST['submit'])) {
 		}
 	</script>
 
-
 	<script>
 		function getfee(val) {
 			$.ajax({
@@ -56,9 +55,6 @@ if (isset($_POST['submit'])) {
 			});
 		}
 	</script>
-
-
-
 
 </head>
 
@@ -180,10 +176,6 @@ if (isset($_POST['submit'])) {
 					</div>
 
 					<!-- end: BASIC EXAMPLE -->
-
-
-
-
 
 
 					<!-- end: SELECT BOXES -->

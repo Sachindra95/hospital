@@ -143,23 +143,19 @@ if (strlen($_SESSION['id'] == 0)) {
 												$cnt = $cnt + 1;
 											} ?>
 
-
 										</tbody>
 									</table>
 								</div>
 							</div>
 						</div>
-
 						<!-- end: BASIC EXAMPLE -->
 						<!-- end: SELECT BOXES -->
-
 					</div>
 				</div>
 			</div>
 			<!-- start: FOOTER -->
 			<?php include('include/footer.php'); ?>
 			<!-- end: FOOTER -->
-
 			<!-- start: SETTINGS -->
 			<?php include('include/setting.php'); ?>
 

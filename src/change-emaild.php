@@ -15,16 +15,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<title>User | Edit Profile</title>
-
-	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="assets/css/plugins.css">
-	<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
-
-
-</head>
+<?php include('include/header.php') ?>
 
 <body>
 	<div id="app">
