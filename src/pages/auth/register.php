@@ -17,119 +17,110 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>User Registration</title>
+<?php include('../../../src/include/header.php') ?>
 
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/plugins.css">
-  <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
-  <script type="text/javascript">
-    function valid() {
-      if (document.registration.password.value != document.registration.password_again.value) {
-        alert("Password and Confirm Password Field do not match  !!");
-        document.registration.password_again.focus();
-        return false;
-      }
-      return true;
-    }
-  </script>
-
-
-</head>
-
-<body class="login">
+<body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">
   <!-- start: REGISTRATION -->
-  <div class="row">
-    <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-      <div class="logo margin-top-30">
-        <a href="../index.php">
-          <h2>Smart Clinic Hospital| Patient Registration</h2>
-        </a>
-      </div>
-      <!-- start: REGISTER BOX -->
-      <div class="box-register">
-        <form name="registration" id="registration" method="post" onSubmit="return valid();">
-          <fieldset>
-            <legend>
-              Sign Up
-            </legend>
-            <p>
-              Enter your personal details below:
-            </p>
-            <div class="form-group">
-              <input type="text" class="form-control" name="full_name" placeholder="Full Name" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="address" placeholder="Address" required>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="city" placeholder="City" required>
-            </div>
-            <div class="form-group">
-              <label class="block">
-                Gender
-              </label>
-              <div class="clip-radio radio-primary">
-                <input type="radio" id="rg-female" name="gender" value="female">
-                <label for="rg-female">
-                  Female
-                </label>
-                <input type="radio" id="rg-male" name="gender" value="male">
-                <label for="rg-male">
-                  Male
-                </label>
-              </div>
-            </div>
-            <p>
-              Enter your account details below:
-            </p>
-            <div class="form-group">
-              <span class="input-icon">
-                <input type="email" class="form-control" name="email" id="email" onBlur="userAvailability()" placeholder="Email" required>
-                <i class="fa fa-envelope"></i> </span>
-              <span id="user-availability-status1" style="font-size:12px;"></span>
-            </div>
-            <div class="form-group">
-              <span class="input-icon">
-                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                <i class="fa fa-lock"></i> </span>
-            </div>
-            <div class="form-group">
-              <span class="input-icon">
-                <input type="password" class="form-control" id="password_again" name="password_again" placeholder="Password Again" required>
-                <i class="fa fa-lock"></i> </span>
-            </div>
-            <div class="form-group">
-              <div class="checkbox clip-check check-primary">
-                <input type="checkbox" id="agree" value="agree" checked="true" readonly=" true">
-                <label for="agree">
-                  I agree
-                </label>
-              </div>
-            </div>
-            <div class="form-actions">
-              <p>
-                Already have an account?
-                <a href="../../../src/pages/auth/login.php">
-                  Log-in
-                </a>
-              </p>
-              <button type="submit" class="btn btn-primary pull-right" id="submit" name="submit">
-                Submit <i class="fa fa-arrow-circle-right"></i>
-              </button>
-            </div>
-          </fieldset>
-        </form>
 
-        <div class="copyright">
-          &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
-        </div>
-
-      </div>
-
-    </div>
+  <div class="bg-black text-center p-10 flex flex-col justify-center items-center">
+    <a href="../../../index.php">
+      <h2 class="text-3xl font-bold text-white ">Smart Clinic Hospital| Patient Registration</h2>
+    </a>
   </div>
+  <!-- start: REGISTER BOX -->
+  <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
+    <form name="registration" id="registration" method="post" onSubmit="return valid();">
+      <h2 class="text-center text-2xl font-bold">
+        Sign Up
+      </h2>
+
+      <p class="text-center mt-5 font-medium">
+        Enter your personal details below:
+      </p>
+
+      <div class="">
+        <input type="text" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5 " name="full_name" placeholder="Full Name" required>
+      </div>
+
+      <div class="">
+        <input type="text" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" name="address" placeholder="Address" required>
+      </div>
+
+      <div class="">
+        <input type="text" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" name="city" placeholder="City" required>
+      </div>
+
+      <h2 class="mt-3 font-medium">
+        Gender
+      </h2>
+
+      <div class="flex justify-around items-center">
+        <div>
+          <input type="radio" id="rg-male" name="gender" value="male">
+          <label for="rg-male">
+            Male
+          </label>
+        </div>
+        <div>
+          <input type="radio" id="rg-female" name="gender" value="female">
+          <label for="rg-female">
+            Female
+          </label>
+        </div>
+      </div>
+
+      <p class="font-medium">
+        Enter your account details below:
+      </p>
+
+      <div class="mt-3">
+        <span class="input-icon">
+          <input type="email" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" name="email" id="email" onBlur="userAvailability()" placeholder="Email" required>
+          <i class="fa fa-envelope"></i> </span>
+        <span id="user-availability-status1" style="font-size:12px;"></span>
+      </div>
+      <div class="">
+        <span class="input-icon">
+          <input type="password" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" id="password" name="password" placeholder="Password" required>
+          <i class="fa fa-lock"></i> </span>
+      </div>
+      <div class="">
+        <span class="input-icon">
+          <input type="password" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" id="password_again" name="password_again" placeholder="Password Again" required>
+          <i class="fa fa-lock"></i> </span>
+      </div>
+      <div class="">
+        <div class="checkbox clip-check check-primary">
+          <input type="checkbox" id="agree" value="agree" checked="true" readonly=" true">
+          <label for="agree">
+            I agree
+          </label>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center mt-5">
+        <button type="submit" class="border rounded-full shadow-lg p-3 bg-purple-800 text-white w-2/5  mx-auto hover:text-purple-800 hover:bg-white hover:border hover:border-purple-800 outline-none" id="submit" name="submit">
+          Submit <i class="fa fa-arrow-circle-right"></i>
+        </button>
+      </div>
+
+      <div class="text-center mt-5">
+        <p>
+          Already have an account?
+          <a class="hover:text-purple-800 " href="../../../src/pages/auth/login.php">
+            Log-in
+          </a>
+        </p>
+      </div>
+    </form>
+
+    <div class="text-center mt-5 font-sans">
+      &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
+    </div>
+
+  </div>
+
+
 
 
   <script>

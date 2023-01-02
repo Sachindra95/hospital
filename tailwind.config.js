@@ -2,14 +2,14 @@
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Rubik-Regular"]
-				normal: ["Rubik-Regular"]
-				medium: ["Rubik-Medium"]
-				bold: ["Rubik-Bold"]
-				semibold: ["Rubik-SemiBold"]
-				extrabold: ["Rubik-ExtraBold"]
-				thin: ["Rubik-Thin"]
-				light: ["Rubik-Light"]
+				sans: ["poppins-regular"]
+				normal: ["poppins-regular"]
+				medium: ["poppins-medium"]
+				bold: ["poppins-bold"]
+				semibold: ["poppins-semibold"]
+				extrabold: ["poppins-extrabold"]
+				thin: ["poppins-thin"]
+				light: ["poppins-light"]
 			}
 		}
 	}

@@ -30,13 +30,10 @@ if (isset($_POST['submit'])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <?php include('../../../src/include/header.php') ?>
-
-
 
 <body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">
 
@@ -78,7 +75,7 @@ if (isset($_POST['submit'])) {
 
       <div class="text-center mt-5 ">
         Don't have an account yet?
-        <a class="hover:text-purple-800 " href="registration.php">
+        <a class="hover:text-purple-800 " href="register.php">
           Create an account
         </a>
       </div>
