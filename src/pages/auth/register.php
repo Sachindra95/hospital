@@ -20,14 +20,12 @@ if (isset($_POST['submit'])) {
 <?php include('../../../src/include/header.php') ?>
 
 <body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">
-  <!-- start: REGISTRATION -->
 
   <div class="bg-black text-center p-10 flex flex-col justify-center items-center">
     <a href="../../../index.php">
       <h2 class="text-3xl font-bold text-white ">Smart Clinic Hospital| Patient Registration</h2>
     </a>
   </div>
-  <!-- start: REGISTER BOX -->
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
     <form name="registration" id="registration" method="post" onSubmit="return valid();">
       <h2 class="text-center text-2xl font-bold">

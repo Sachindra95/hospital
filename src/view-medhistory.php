@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
   <title>Users | Medical History</title>
   <link href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple|3d-float" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/plugins.css">
+  <!-- <link rel="stylesheet" href="assets/css/plugins.css"> -->
   <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
 </head>
 

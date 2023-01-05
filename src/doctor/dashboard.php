@@ -38,8 +38,6 @@ if (strlen($_SESSION['id'] == 0)) {
 								</ol>
 							</div>
 						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
 						<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 								<div class="col-sm-4">
@@ -73,13 +71,6 @@ if (strlen($_SESSION['id'] == 0)) {
 
 							</div>
 						</div>
-
-
-
-
-
-
-						<!-- end: SELECT BOXES -->
 
 					</div>
 				</div>

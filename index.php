@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/doctor.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Doctors login</h6>
-                        <a href="src/pages/auth/login.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a href="src/doctor/index.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/admin.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Admin Login</h6>
-                        <a href="src/pages/auth/login.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a href="src/admin/index.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
