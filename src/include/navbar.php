@@ -4,7 +4,7 @@
 			<img src="./assets/images/logo.jpg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
 		</a>
 		<div class="flex md:order-2">
-			<button type="button"class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Book an appoinment</button>
+			<a href="src/pages/auth/register.php"><button type="button"class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 ">Book an appoinment</button></a>
 			
 			<button id="menu" data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
 				<span class="sr-only">Open main menu</span>

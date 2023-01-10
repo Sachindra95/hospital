@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
     <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
       <div class="logo margin-top-30">
         <a href="../index.php">
-          <h2> HMS | Patient Password Recovery</h2>
+          <h2> Smart Clinic Hospital | Patient Password Recovery</h2>
         </a>
       </div>
 

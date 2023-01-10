@@ -88,8 +88,6 @@ error:function (){}
 								</ol>
 							</div>
 						</section>
-						<!-- end: PAGE TITLE -->
-						<!-- start: BASIC EXAMPLE -->
 						<div class="container-fluid container-fullw bg-white">
 							<div class="row">
 								<div class="col-md-12">
@@ -195,16 +193,7 @@ while($row=mysqli_fetch_array($ret))
 									</div>
 								</div>
 							</div>
-						</div>
-						<!-- end: BASIC EXAMPLE -->
-			
-					
-					
-						
-						
-					
-						<!-- end: SELECT BOXES -->
-						
+						</div>					
 					</div>
 				</div>
 			</div>

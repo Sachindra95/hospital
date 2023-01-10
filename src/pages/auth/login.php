@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
         <input type="password" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5" name="password" placeholder="Password">
       </div>
       <div class="mt-5">
-        <a class="hover:text-purple-800 " href="forgot-password.php">
+        <a class="hover:text-purple-800 " href="forgot.php">
           Forgot Password ?
         </a>
       </div>
@@ -81,11 +81,12 @@ if (isset($_POST['submit'])) {
       </div>
 
     </form>
-  </div>
-
-  <div class="text-center mt-5 font-sans">
+    <div class="text-center mt-5 font-sans">
       &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
     </div>
+  </div>
+
+  
 </body>
 
 </html>
