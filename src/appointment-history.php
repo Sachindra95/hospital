@@ -17,7 +17,7 @@ if (strlen($_SESSION['id'] == 0)) {
 		<title>User | Appointment History</title>
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/plugins.css">
-		<link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+		<link rel="stylesheet" href="../assets/" id="skin_color" />
 	</head>
 
 	<body>

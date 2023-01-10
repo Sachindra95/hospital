@@ -14,11 +14,11 @@ if (isset($_POST['submit'])) {
     $host = $_SERVER['HTTP_HOST'];
     $uip = $_SERVER['REMOTE_ADDR'];
     $status = 1;
-    // For stroing log if user login successfull
+  
     $log = mysqli_query($con, "insert into userlog(uid,username,userip,status) values('$pid','$puname','$uip','$status')");
     header("location:dashboard.php");
   } else {
-    // For stroing log if user login unsuccessfull
+
     $_SESSION['login'] = $_POST['username'];
     $uip = $_SERVER['REMOTE_ADDR'];
     $status = 0;
@@ -83,6 +83,9 @@ if (isset($_POST['submit'])) {
     </form>
   </div>
 
+  <div class="text-center mt-5 font-sans">
+      &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
+    </div>
 </body>
 
 </html>

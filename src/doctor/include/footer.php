@@ -1,10 +1,5 @@
 <footer>
-	<div class="footer-inner">
-		<div class="pull-left">
-			<span class="text-bold text-uppercase">Smart Clinic Hospital</span>
-		</div>
-		<div class="pull-right">
-			<span class="go-top"><i class="ti-angle-up"></i></span>
-		</div>
-	</div>
+<div class="text-center mt-5 font-sans">
+      &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
+    </div>
 </footer>

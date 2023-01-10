@@ -16,9 +16,6 @@ if (strlen($_SESSION['id'] == 0)) {
 		<div id="app">
 			<?php include('include/sidebar.php'); ?>
 			<div class="app-content">
-
-				<?php include('include/header.php'); ?>
-
 				<!-- end: TOP NAVBAR -->
 				<div class="main-content">
 					<div class="wrap-content container" id="container">
@@ -80,7 +77,7 @@ if (strlen($_SESSION['id'] == 0)) {
 			<!-- end: FOOTER -->
 
 			<!-- start: SETTINGS -->
-			<?php include('include/setting.php'); ?>
+			<!-- <?php include('include/setting.php'); ?> -->
 
 			<!-- end: SETTINGS -->
 		</div>
