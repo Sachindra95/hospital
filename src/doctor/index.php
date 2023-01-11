@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-    <form class="" method="post">
+    <form class="" method="post" action="dashboard.php">
 
       <h2 class="text-center text-2xl font-bold">
         Sign in to your account
@@ -83,9 +83,6 @@ if (isset($_POST['submit'])) {
       </div>
   </div>
   </div>
-
-
-
 
 
   <script src="https://cdn.tailwindcss.com"></script>

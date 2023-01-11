@@ -1,7 +1,7 @@
 <?php
 session_start();
 error_reporting(0);
-include("../../../config/index.php");
+include("../../../config.php");
 if (isset($_POST['submit'])) {
   $puname = $_POST['username'];
   $ppwd = md5($_POST['password']);
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-    <form class="" method="post">
+    <form class="" method="POST" action="../../dashboard.php">
 
       <h2 class="text-center text-2xl font-bold">
         Sign in to your account

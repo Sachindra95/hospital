@@ -85,14 +85,6 @@ check_login();
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-					<!-- end: SELECT BOXES -->
-
 				</div>
 			</div>
 		</div>
@@ -102,7 +94,6 @@ check_login();
 
 		<!-- start: SETTINGS -->
 		<?php include('include/setting.php'); ?>
-		<>
 			<!-- end: SETTINGS -->
 	</div>
 </body>
