@@ -1,71 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
 
 @font-face {
-	font-family: "poppins-regular";
-	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-family: "poppins-regular";
+  src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "poppins-medium";
-	src: url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-family: "poppins-medium";
+  src: url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "poppins-bold";
-	src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "poppins-bold";
+  src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "poppins-italic";
-	src: url("/assets/fonts/Poppins-Italic.ttf") format("truetype");
+  font-family: "poppins-italic";
+  src: url("/assets/fonts/Poppins-Italic.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "poppins-light";
-	src: url("/assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-family: "poppins-light";
+  src: url("/assets/fonts/Poppins-Light.ttf") format("truetype");
 }
 
 @font-face {
-	font-family: "poppins-thin";
-	src: url("/assets/fonts/Poppins-Thin.ttf") format("truetype");
+  font-family: "poppins-thin";
+  src: url("/assets/fonts/Poppins-Thin.ttf") format("truetype");
 }
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 html body {
-	font-family: "poppins-regular", sans-serif;
+  font-family: "poppins-regular", sans-serif;
 }
 
 .font-sans {
-	font-family: "poppins-regular";
-	font-weight: 400;
+  font-family: "poppins-regular";
+  font-weight: 400;
 }
 
 .font-normal {
-	font-family: "poppins-regular";
-	font-weight: 400;
+  font-family: "poppins-regular";
+  font-weight: 400;
 }
 
 .font-bold {
-	font-family: "poppins-bold";
-	font-weight: 900;
+  font-family: "poppins-bold";
+  font-weight: 900;
 }
 
 .font-medium {
-	font-family: "poppins-medium";
-	font-weight: 500;
+  font-family: "poppins-medium";
+  font-weight: 500;
 }
 
 .font-light {
-	font-family: "poppins-light";
-	font-weight: 200;
+  font-family: "poppins-light";
+  font-weight: 200;
 }
 
 .font-thin {
-	font-family: "poppins-thin";
-	font-weight: 100;
+  font-family: "poppins-thin";
+  font-weight: 100;
 }

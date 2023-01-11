@@ -14,6 +14,7 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 
 <?php include('./src/include/header.php') ?>
+<link rel="stylesheet" href="./css/slider.css">
 
 <body>
 
@@ -22,20 +23,35 @@ if (isset($_POST['submit'])) {
 
     <div class="mt-32 "></div>
 
-    <img class="w-full h-[50vh]" src="assets/images/slider/slider_1.jpg" alt="First slide">
+    <div class="slideshow-container">
+        <div class="inner">
 
-    <!-- <div class="h-[500px] bg-red-500 w-full">
-        <div class="">
-            <img class="" src="assets/images/slider/slider_1.jpg" alt="First slide">
-        </div>
-        <div class="">
-            <img class="" src="assets/images/slider/slider_2.jpg" alt="Second slide">
-        </div>
-        <div class="">
-            <img class="" src="assets/images/slider/slider_3.jpg" alt="Third slide">
-        </div>
-    </div> -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./assets/images/slider/slider_1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
 
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./assets/images/slider/slider_2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./assets/images/slider/slider_3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
 
     <!-- Logins -->
     <section class="container mx-auto">
@@ -77,13 +93,14 @@ if (isset($_POST['submit'])) {
     </section>
     <!-- *********** login page end *********** -->
 
-    
+
     <!--Footer Starts Here--->
     <?php include('./src/include/footer.php') ?>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./tailwind.config.js"></script>
+    <script src="./slider.js"></script>
 </body>
 
 
