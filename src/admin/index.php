@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
       </h2>
       <p class="text-center mt-5 ">
         Please enter your name and password to log in.<br />
-        <span class="text-red-500 "><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg'] = ""); ?></span>
+        <span class="text-red-500 "><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg'] = " "); ?></span>
       </p>
       <div class="">
         <input type="text" class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5 " name="username" placeholder="Username">

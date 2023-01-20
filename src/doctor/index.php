@@ -17,8 +17,8 @@ if (isset($_POST['submit'])) {
     $log = mysqli_query($con, "insert into doctorslog(uid,username,userip,status) values('$uid','$uname','$uip','$status')");
 
     header("location:dashboard.php");
-  } else {
-
+  } 
+  else {
     $uip = $_SERVER['REMOTE_ADDR'];
     $status = 0;
     mysqli_query($con, "insert into doctorslog(username,userip,status) values('$uname','$uip','$status')");
@@ -44,13 +44,13 @@ if (isset($_POST['submit'])) {
 
 <body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">
   <div class="bg-black text-center p-10 flex flex-col justify-center items-center">
-    <a href="../../../index.php">
+    <a href="../../index.php">
       <h2 class="text-3xl font-bold text-white "> Smart Clinic Hospital | Doctor Login</h2>
     </a>
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-    <form class="" method="post" action="dashboard.php">
+    <form class="" method="post" action="../doctor/dashboard.php">
 
       <h2 class="text-center text-2xl font-bold">
         Sign in to your account
