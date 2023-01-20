@@ -2,12 +2,14 @@
 session_start();
 error_reporting(0);
 include("../../../config.php");
+
 if (isset($_POST['submit'])) {
   $puname = $_POST['username'];
   $ppwd = md5($_POST['password']);
   $ret = mysqli_query($con, "SELECT * FROM users WHERE email='$puname' and password='$ppwd'");
   $num = mysqli_fetch_array($ret);
   if ($num > 0) {
+    
     $_SESSION['login'] = $_POST['username'];
     $_SESSION['id'] = $num['id'];
     $pid = $num['id'];
@@ -18,7 +20,7 @@ if (isset($_POST['submit'])) {
     $log = mysqli_query($con, "insert into userlog(uid,username,userip,status) values('$pid','$puname','$uip','$status')");
     header("location:dashboard.php");
   } else {
-
+    echo "else block excuted";
     $_SESSION['login'] = $_POST['username'];
     $uip = $_SERVER['REMOTE_ADDR'];
     $status = 0;
@@ -45,7 +47,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-    <form class="" method="POST" action="../../dashboard.php">
+    <form class="" method="post" action="#">
 
       <h2 class="text-center text-2xl font-bold">
         Sign in to your account

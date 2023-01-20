@@ -59,7 +59,4 @@
 						</div>
 						<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
 					</div>
-				
-					
-					<!-- end: NAVBAR COLLAPSE -->
 				</header>

@@ -18,10 +18,9 @@ check_login();
 
 			<?php include('include/header.php'); ?>
 
-			<!-- end: TOP NAVBAR -->
 			<div class="main-content">
 				<div class="wrap-content container" id="container">
-					<!-- start: PAGE TITLE -->
+		
 					<section id="page-title">
 						<div class="row">
 							<div class="col-sm-8">
@@ -37,8 +36,6 @@ check_login();
 							</ol>
 						</div>
 					</section>
-					<!-- end: PAGE TITLE -->
-					<!-- start: BASIC EXAMPLE -->
 					<div class="container-fluid container-fullw bg-white">
 						<div class="row">
 							<div class="col-sm-4">
@@ -88,13 +85,10 @@ check_login();
 				</div>
 			</div>
 		</div>
-		<!-- start: FOOTER -->
-		<?php include('include/footer.php'); ?>
-		<!-- end: FOOTER -->
 
-		<!-- start: SETTINGS -->
+		<?php include('include/footer.php'); ?>
+
 		<?php include('include/setting.php'); ?>
-			<!-- end: SETTINGS -->
 	</div>
 </body>
 

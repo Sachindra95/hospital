@@ -103,10 +103,6 @@ if (strlen($_SESSION['id'] == 0)) {
 								</div>
 							</div>
 						</div>
-
-						<!-- end: BASIC EXAMPLE -->
-						<!-- end: SELECT BOXES -->
-
 					</div>
 				</div>
 			</div>

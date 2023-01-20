@@ -18,103 +18,91 @@ if (isset($_POST['submit'])) {
 <?php include('include/header.php') ?>
 
 <body>
-	<div id="app">
-		<?php include('include/sidebar.php'); ?>
-		<div class="app-content">
+    <div id="app">
+        <?php include('include/sidebar.php'); ?>
+        <div class="app-content">
 
-			<?php include('include/header.php'); ?>
+            <?php include('include/header.php'); ?>
 
-			<!-- end: TOP NAVBAR -->
-			<div class="main-content">
-				<div class="wrap-content container" id="container">
-					<!-- start: PAGE TITLE -->
-					<section id="page-title">
-						<div class="row">
-							<div class="col-sm-8">
-								<h1 class="mainTitle">User | Edit Profile</h1>
-							</div>
-							<ol class="breadcrumb">
-								<li>
-									<span>User </span>
-								</li>
-								<li class="active">
-									<span>Edit Profile</span>
-								</li>
-							</ol>
-						</div>
-					</section>
-					<!-- end: PAGE TITLE -->
-					<!-- start: BASIC EXAMPLE -->
-					<div class="container-fluid container-fullw bg-white">
-						<div class="row">
-							<div class="col-md-12">
-								<h5 style="color: green; font-size:18px; ">
-									<?php if ($msg) {
+            <!-- end: TOP NAVBAR -->
+            <div class="main-content">
+                <div class="wrap-content container" id="container">
+                    <!-- start: PAGE TITLE -->
+                    <section id="page-title">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h1 class="mainTitle">User | Edit Profile</h1>
+                            </div>
+                            <ol class="breadcrumb">
+                                <li>
+                                    <span>User </span>
+                                </li>
+                                <li class="active">
+                                    <span>Edit Profile</span>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+                    <!-- end: PAGE TITLE -->
+                    <!-- start: BASIC EXAMPLE -->
+                    <div class="container-fluid container-fullw bg-white">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5 style="color: green; font-size:18px; ">
+                                    <?php if ($msg) {
 										echo htmlentities($msg);
 									} ?> </h5>
-								<div class="row margin-top-30">
-									<div class="col-lg-8 col-md-12">
-										<div class="panel panel-white">
-											<div class="panel-heading">
-												<h5 class="panel-title">Edit Profile</h5>
-											</div>
-											<div class="panel-body">
-												<form name="registration" id="updatemail" method="post">
-													<div class="form-group">
-														<label for="fess">
-															User Email
-														</label>
-														<input type="email" class="form-control" name="email" id="email" onBlur="userAvailability()" placeholder="Email" required>
+                                <div class="row margin-top-30">
+                                    <div class="col-lg-8 col-md-12">
+                                        <div class="panel panel-white">
+                                            <div class="panel-heading">
+                                                <h5 class="panel-title">Edit Profile</h5>
+                                            </div>
+                                            <div class="panel-body">
+                                                <form name="registration" id="updatemail" method="post">
+                                                    <div class="form-group">
+                                                        <label for="fess">
+                                                            User Email
+                                                        </label>
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            onBlur="userAvailability()" placeholder="Email" required>
 
-														<span id="user-availability-status1" style="font-size:12px;"></span>
-													</div>
+                                                        <span id="user-availability-status1"
+                                                            style="font-size:12px;"></span>
+                                                    </div>
 
+                                                    <button type="submit" name="submit" id="submit"
+                                                        class="btn btn-o btn-primary">
+                                                        Update
+                                                    </button>
+                                                </form>
 
+                                            </div>
+                                        </div>
+                                    </div>
 
-
-
-
-
-													<button type="submit" name="submit" id="submit" class="btn btn-o btn-primary">
-														Update
-													</button>
-												</form>
-
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-							<div class="col-lg-12 col-md-12">
-								<div class="panel panel-white">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="panel panel-white">
 
 
-								</div>
-							</div>
-						</div>
-					</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-					<!-- end: BASIC EXAMPLE -->
+                </div>
+            </div>
+        </div>
+        <!-- start: FOOTER -->
+        <?php include('include/footer.php'); ?>
+        <!-- end: FOOTER -->
 
+        <!-- start: SETTINGS -->
+        <?php include('include/setting.php'); ?>
 
-
-
-
-
-					<!-- end: SELECT BOXES -->
-
-				</div>
-			</div>
-		</div>
-		<!-- start: FOOTER -->
-		<?php include('include/footer.php'); ?>
-		<!-- end: FOOTER -->
-
-		<!-- start: SETTINGS -->
-		<?php include('include/setting.php'); ?>
-
-		<!-- end: SETTINGS -->
+        <!-- end: SETTINGS -->
 
 
 </body>

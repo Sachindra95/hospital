@@ -65,7 +65,8 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/patient.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Patient Login</h6>
-                        <a type="button" href="src/pages/auth/login.php" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a type="button" href="src/pages/auth/login.php"
+                            class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +76,8 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/doctor.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Doctors login</h6>
-                        <a href="src/doctor/index.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a href="src/doctor/index.php" type="button"
+                            class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +87,8 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/admin.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Admin Login</h6>
-                        <a href="src/admin/index.php" type="button" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a href="src/admin/index.php" type="button"
+                            class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
@@ -97,8 +100,12 @@ if (isset($_POST['submit'])) {
     <!--Footer Starts Here--->
     <?php include('./src/include/footer.php') ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./tailwind.config.js"></script>
     <script src="./slider.js"></script>
 </body>
