@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+  <!-- <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" /> -->
 </head>
 
 <body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">

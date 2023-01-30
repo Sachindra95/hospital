@@ -86,7 +86,7 @@ check_login();
 			</div>
 		</div>
 
-		<?php include('include/footer.php'); ?>
+		<?php include('include/footer1.php'); ?>
 
 		<?php include('include/setting.php'); ?>
 	</div>

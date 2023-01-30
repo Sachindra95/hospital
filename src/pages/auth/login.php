@@ -2,28 +2,24 @@
 session_start();
 error_reporting(0);
 include("../../include/config.php");
-if (isset($_POST['submit'])) 
-{
+if (isset($_POST['submit'])) {
   $puname = $_POST['username'];
   $ppwd = md5($_POST['password']);
   $ret = mysqli_query($con, "SELECT * FROM users WHERE email='$puname' and password='$ppwd'");
   $num = mysqli_fetch_array($ret);
-  if ($num > 0) 
-  {
-    $_SESSION['login']=$_POST['username'];
-    $_SESSION['id']=$num['id'];
-    $pid=$num['id'];
-    $host=$_SERVER['HTTP_HOST'];
-    $uip=$_SERVER['REMOTE_ADDR'];
+  if ($num > 0) {
+    $_SESSION['login'] = $_POST['username'];
+    $_SESSION['id'] = $num['id'];
+    $pid = $num['id'];
+    $host = $_SERVER['HTTP_HOST'];
+    $uip = $_SERVER['REMOTE_ADDR'];
     $status = 1;
-  
+
     $log = mysqli_query($con, "insert into userlog(uid,username,userip,status) values('$pid','$puname','$uip','$status')");
     header("location:dashboard.php");
-  }
-  else 
-  {
-    $_SESSION['login']=$_POST['username'];
-    $uip=$_SERVER['REMOTE_ADDR'];
+  } else {
+    $_SESSION['login'] = $_POST['username'];
+    $uip = $_SERVER['REMOTE_ADDR'];
     $status = 0;
     mysqli_query($con, "insert into userlog(username,userip,status) values('$puname','$uip','$status')");
     $_SESSION['errmsg'] = "Invalid username or password";
@@ -48,10 +44,9 @@ if (isset($_POST['submit']))
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-  <form class="" method="get" action="../../dashboard.php">
-
-      <h2 class="text-center text-2xl font-bold">
-        Sign in to your account
+    <form class="" method="post" action="../../dashboard.php"
+    <h2 class="text-center text-2xl font-bold">
+      Sign in to your account
       </h2>
       <p class="text-center mt-5 ">
         Please enter your name and password to log in.<br />
@@ -85,11 +80,10 @@ if (isset($_POST['submit']))
 
     </form>
     <div class="text-center mt-5 font-sans">
-      &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
+      &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic
+        Hospital</span>. <span>All rights reserved</span>
     </div>
   </div>
-
-  
 </body>
 
 </html>

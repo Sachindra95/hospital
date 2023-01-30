@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
   </div>
 
   <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
-    <form class="" method="post" action="../doctor/dashboard.php">
+    <form class="" method="POST" action="../doctor/dashboard.php">
 
       <h2 class="text-center text-2xl font-bold">
         Sign in to your account
