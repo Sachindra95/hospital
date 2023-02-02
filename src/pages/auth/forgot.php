@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 
     $_SESSION['name'] = $name;
     $_SESSION['email'] = $email;
-    header('location:reset-password.php');
+    header('location:forgot.php');
   } else {
     echo "<script>alert('Invalid details. Please try with valid details');</script>";
     echo "<script>window.location.href ='forgot-password.php'</script>";
@@ -25,69 +25,63 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 
 <head>
-  <title>Pateint Password Recovery</title>
+    <title>Pateint Password Recovery</title>
 
-  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/plugins.css">
-  <link rel="stylesheet" href="assets/css/themes/theme-1.css" id="skin_color" />
+    <link
+        href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+<?php include('../../../src/include/header.php') ?>
 
-<body class="login">
-  <div class="row">
-    <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-      <div class="logo margin-top-30">
-        <a href="../index.php">
-          <h2> Smart Clinic Hospital | Patient Password Recovery</h2>
-        </a>
-      </div>
+<body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen">
+    <div class="container">
 
-      <div class="box-login">
-        <form class="form-login" method="post">
-          <fieldset>
-            <legend>
-              Patient Password Recovery
-            </legend>
-            <p>
-              Please enter your Email and password to recover your password.<br />
-
-            </p>
-
-            <div class="form-group form-actions">
-              <span class="input-icon">
-                <input type="text" class="form-control" name="fullname" placeholder="Registred Full Name">
-                <i class="fa fa-lock"></i>
-              </span>
+        <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="bg-black text-center p-10 flex flex-col justify-center items-center">
+                <h2 class="text-3xl font-bold text-white "> Smart Clinic Hospital | Patient Password Recovery</h2>
             </div>
 
-            <div class="form-group">
-              <span class="input-icon">
-                <input type="email" class="form-control" name="email" placeholder="Registred Email">
-                <i class="fa fa-user"></i> </span>
-            </div>
+            <div class="container w-[90%] md:w-2/5 mx-auto  shadow rounded-2xl p-10 mt-10  bg-white">
+                <form class="form-login" method="post">
 
-            <div class="form-actions">
-
-              <button type="submit" class="btn btn-primary pull-right" name="submit">
-                Reset <i class="fa fa-arrow-circle-right"></i>
-              </button>
+                    <h2 class="text-center text-2xl font-bold">
+                        Patient Password Recovery
+                    </h2>
+                    <p class="text-center mt-5 ">
+                        Please enter your Email and password to recover your password.<br />
+                    </p>
+                    <div class="">
+                        <input type="text"
+                            class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5 "
+                            name="Registred Full Name" placeholder="Registred Full Name">
+                    </div>
+                    <div class="">
+                        <input type="email"
+                            class="outline-none p-2 rounded-full shadow text-purple-800 mt-5 w-full pl-5"
+                            name="Registred Email" placeholder="Registred Email">
+                    </div>
+                    <div class="flex justify-center items-center mt-5">
+                        <button type="submit"
+                            class="border rounded-full shadow-lg p-3 bg-purple-800 text-white w-2/5  mx-auto hover:text-purple-800 hover:bg-white hover:border hover:border-purple-800 outline-none"
+                            name="submit">
+                            Reset
+                        </button>
+                    </div>
+                    <div class="text-center mt-5">
+                        Already have an account?
+                        <a href="../../../src/pages/auth/login.php">
+                            Log-in
+                        </a>
+                    </div>
+                </form>
+                <div class="text-center mt-5 font-sans">
+                    &copy; <span class="current-year">2022</span><span class="text-bold text-uppercase"> Smart Clinic
+                        Hospital</span>. <span>All rights reserved</span>
+                </div>
             </div>
-            <div class="new-account">
-              Already have an account?
-              <a href="../../../src/pages/auth/login.php">
-                Log-in
-              </a>
-            </div>
-          </fieldset>
-        </form>
-
-        <div class="copyright">
-          &copy; <span class="text-bold text-uppercase"> Smart Clinic Hospital</span>
         </div>
-
-      </div>
-
     </div>
-  </div>
 </body>
+
 </html>

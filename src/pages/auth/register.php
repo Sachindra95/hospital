@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
       </div>
       <div class="">
         <div class="checkbox clip-check check-primary">
-          <input type="checkbox" id="agree" value="agree" checked="true" readonly=" true">
+          <input type="checkbox" id="agree" value="agree" readonly=" true">
           <label for="agree">
             I agree
           </label>

@@ -56,7 +56,7 @@ if (isset($_POST['submit'])) {
         Sign in to your account
       </h2>
       <p class="text-center mt-5 ">
-        Please enter your name and password to log in.<br />
+        Please enter your username and password to log in.<br />
         <span class="text-red-500 ">
           <?php echo $_SESSION['errmsg']; ?><?php echo $_SESSION['errmsg'] = ""; ?>
         </span>

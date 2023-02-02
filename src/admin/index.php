@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Admin-Login</title>
   <meta charset="utf-8" />
@@ -69,14 +70,19 @@ if (isset($_POST['submit'])) {
         <button type="submit" class="border rounded-full shadow-lg p-3 bg-purple-800 text-white w-2/5  mx-auto hover:text-purple-800 hover:bg-white hover:border hover:border-purple-800 outline-none" name="submit">
           Login
         </button>
-      </div>
-      <a class="hover:text-purple-800 " href="../../index.php">Back to HomePage</a>
+        <!-- <div class="flex justify-center text-center mt-5">
+          <a class="hover:text-purple-800" href="../../index.php">Back to HomePage</a>
+        </div> -->
+        </div class="text-center mt-5">
+      <a class=" hover:text-purple-800 " href="../../index.php">Back to HomePage</a>
 
-      <div class="text-center mt-5 font-sans">
-        &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
-      </div>
 
-  </div>
+
+        <div class="text-center mt-5 font-sans">
+          &copy; <span class="current-year"></span>2022<span class="text-bold text-uppercase"> Smart Clinic Hospital</span>. <span>All rights reserved</span>
+        </div>
+
+      </div>
 
   </div>
   </div>
