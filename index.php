@@ -29,19 +29,19 @@ if (isset($_POST['submit'])) {
             <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="./assets/images/slider/slider_1.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="text">Sachindra</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="./assets/images/slider/slider_2.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <div class="text">Kumar</div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="./assets/images/slider/slider_3.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <div class="text">Viswakarma</div>
             </div>
         </div>
     </div>
@@ -53,8 +53,7 @@ if (isset($_POST['submit'])) {
         <span class="dot"></span>
     </div>
 
-    <!-- Logins -->
-    <section class="container mx-auto">
+    <section id="logins" class="container mx-auto">
 
         <h2 class="text-3xl text-center text-gray-800 font-bold my-5 ">Logins</h2>
 
@@ -94,10 +93,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </section>
-    <!-- *********** login page end *********** -->
 
-
-    <!--Footer Starts Here--->
     <?php include('./src/include/footer.php') ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"

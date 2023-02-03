@@ -11,16 +11,14 @@
 		<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
 			<i class="ti-align-justify"></i>
 		</a>
-		<a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+		<!-- <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
 			<span class="sr-only">Toggle navigation</span>
 			<i class="ti-view-grid"></i>
-		</a>
+		</a> -->
 	</div>
-	<!-- end: NAVBAR HEADER -->
-	<!-- start: NAVBAR COLLAPSE -->
+	
 	<div class="navbar-collapse collapse">
 		<ul class="nav navbar-right">
-			<!-- start: MESSAGES DROPDOWN -->
 			<li style="padding-top:2% ">
 				<h2>Smart Clinic Hospital</h2>
 			</li>
@@ -57,16 +55,10 @@
 					</li>
 				</ul>
 			</li>
-			<!-- end: USER OPTIONS DROPDOWN -->
 		</ul>
-		<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
-		<div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+		<!-- <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
 			<div class="arrow-left"></div>
 			<div class="arrow-right"></div>
-		</div>
-		<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+		</div> -->
 	</div>
-
-
-	<!-- end: NAVBAR COLLAPSE -->
 </header>

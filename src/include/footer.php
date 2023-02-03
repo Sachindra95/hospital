@@ -1,4 +1,4 @@
-<footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 font-normal">
+<footer id="Contact Us" class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8 font-normal">
 	<div class="sm:flex sm:items-center sm:justify-between">
 		<a class="flex items-center mb-4 sm:mb-0">
 			<img src="./assets/images/logo.jpg" class="mr-3 h-8" alt="Logo" />

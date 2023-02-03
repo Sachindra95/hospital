@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
-
+<?php include('../../src/include/header.php') ?>
 <body class="bg-[url('https://source.unsplash.com/400x400?flower')] bg-no-repeat bg-cover h-screen ">
   <div class="bg-black text-center p-10 flex flex-col justify-center items-center">
     <a href="../../index.php">
@@ -85,9 +85,10 @@ if (isset($_POST['submit'])) {
   </div>
 
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../tailwind.config.js"></script>
+  
 
-  <script>
+  <!-- <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -104,7 +105,7 @@ if (isset($_POST['submit'])) {
         },
       },
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
