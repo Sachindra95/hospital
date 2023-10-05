@@ -13,13 +13,13 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include('./src/include/header.php') ?>
+<?php include('include/header.php') ?>
 <link rel="stylesheet" href="./css/slider.css">
 
 <body>
 
 
-    <?php include('./src/include/navbar.php') ?>
+    <?php include('include/navbar.php') ?>
 
     <div class="mt-32 "></div>
 
@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <!-- Logins -->
-    <section class="container mx-auto">
+    <section class="container mx-auto" id="Logins">
 
         <h2 class="text-3xl text-center text-gray-800 font-bold my-5 ">Logins</h2>
 
@@ -65,7 +65,7 @@ if (isset($_POST['submit'])) {
                     <img class="rounded" src="assets/images/patient.jpg" alt="">
                     <div class="p-2 m-2">
                         <h6 class="text-center font-medium text-lg">Patient Login</h6>
-                        <a type="button" href="src/pages/auth/login.php" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
+                        <a type="button" href="src/login.php" class="p-3 rounded-full shadow w-36 text-white outline-none bg-green-500 ">Click Here</a>
                     </div>
                 </div>
             </div>
@@ -91,11 +91,8 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </section>
-    <!-- *********** login page end *********** -->
-
-
-    <!--Footer Starts Here--->
-    <?php include('./src/include/footer.php') ?>
+  
+    <?php include('include/footer.php') ?>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

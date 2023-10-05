@@ -1,0 +1,20 @@
+Smart Clinic Hospital Management
+
+****Login Details****
+
+**Admin Login Details**
+
+Email   : admin
+Password: Test@12345
+
+
+**Doctor Login Details**
+
+Email      : sachin@test.com
+Password   : Test@123
+
+
+**User Login Details**
+
+Email   : nikhil@test.com / amit@gmail.com
+Password: Test@123
