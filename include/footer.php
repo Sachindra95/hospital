@@ -88,6 +88,6 @@
     </div>
     <div class="bg-neutral-200 p-6 text-center dark:bg-neutral-700">
         <span>© 2023 Copyright:</span>
-        <a class="font-semibold text-neutral-600 dark:text-neutral-400" href="https://tailwind-elements.com/">Smart Clinic Hospital</a>
+        <a class="font-semibold text-neutral-600 dark:text-neutral-400">Smart Clinic Hospital</a>
     </div>
 </footer>
