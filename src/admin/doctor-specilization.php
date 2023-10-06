@@ -8,13 +8,13 @@ if (strlen($_SESSION['id'] == 0)) {
 
 	if (isset($_POST['submit'])) {
 		$doctorspecilization = $_POST['doctorspecilization'];
-		$sql = mysqli_query($con, "insert into doctorSpecilization(specilization) values('$doctorspecilization')");
+		$sql = mysqli_query($con, "insert into doctorspecilization(specilization) values('$doctorspecilization')");
 		$_SESSION['msg'] = "Doctor Specialization added successfully !!";
 	}
 	//Code Deletion
 	if (isset($_GET['del'])) {
 		$sid = $_GET['id'];
-		mysqli_query($con, "delete from doctorSpecilization where id = '$sid'");
+		mysqli_query($con, "delete from doctorspecilization where id = '$sid'");
 		$_SESSION['msg'] = "data deleted !!";
 	}
 ?>
@@ -127,7 +127,7 @@ if (strlen($_SESSION['id'] == 0)) {
 										</thead>
 										<tbody>
 											<?php
-											$sql = mysqli_query($con, "select * from doctorSpecilization");
+											$sql = mysqli_query($con, "select * from doctorspecilization");
 											$cnt = 1;
 											while ($row = mysqli_fetch_array($sql)) {
 											?>
